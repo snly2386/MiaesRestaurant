@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fondu</title>
+		<meta charset=utf-8>
+        <meta name="keywords" content="jquery, gallery, images, css3, html5, photography, website, template, google maps, sliding, background"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    </head>
+    <body>
+		<div id="map"></div>
+		<div id="bf_container" class="bf_container">
+			<div id="bf_background" class="bf_background">
+				<img src="images/background/default.jpg" alt="image1" style="display:none;"/>
+				<div class="bf_overlay"></div>
+			</div>
+			<div id="bf_page_menu" class="bf_menu" >
+				<h1 class="title">Miaes<span>Fondu Restaurant</span></h1>
+				<ul>
+					<li><a href="#" data-content="home"><span class="bf_hover"></span><span>Welcome</span></a></li>
+					<li><a href="#" data-content="about"><span class="bf_hover"></span><span>About us</span></a></li>
+					<li><a href="#" data-content="menu"><span class="bf_hover"></span><span>Our Menu</span></a></li>
+					<li><a href="#" data-content="visit"><span class="bf_hover"></span><span>Visit us</span></a></li>
+				</ul>
+			</div>
+			<div class="bf_page" id="home" style="display:block;">
+				<div class="bf_content_text">
+					<h2>Welcome</h2>
+					<p>Come Enjoy Some Mudafuckin Fondu in the foothills of the shittiest city in the world, Chungpyong! We boast a fine selection of 1 or 2 fondus who the fuck can remember.  We got cheese shit and chocolate shit.  We charge 50g's for one order cuz u cant get this shit anywhere else! So what are you waiting for, take that 2 hour long ass bus ride to the middle of fucking nowhere to eat some of this semi authentic french/swedish cooking!</p>
+				</div>
+			</div>
+			<div class="bf_page" id="about">
+				<div class="bf_content_text">
+					<h2>About us</h2>
+					<p>We got one cook whose only professional experience consists of cooking for her son once in awhile.  All of our ingredients are freshly delivered from costco and LG mart.  We started this business cuz we had no manies.</p>
+					<p>Our shitbox..err restaurant is located deep in the most remote ass end of the forest. It can hold up to 3 persons including the chef.  We have toilets and are hoping to install a fan in the near future! </p>
+				</div>
+			</div>
+			<div class="bf_page" id="menu">
+				<div class="bf_content_text">
+					<h2>Our Menu</h2>
+					<p>We boast an impressive selection of shitty ass fondu.</p>
+					<ul id="bf_dishes">
+						<li><a href="#"><img src="images/thumbs/1.jpg" alt="thumb1" class="thumb"/></a></li>
+						<li><a href="#"><img src="images/thumbs/2.jpg" alt="thumb2" class="thumb"/></a></li>
+						<li><a href="#"><img src="images/thumbs/3.jpg" alt="thumb3" class="thumb"/></a></li>
+						<li><a href="#"><img src="images/thumbs/4.jpg" alt="thumb4" class="thumb"/></a></li>
+						<li><a href="#"><img src="images/thumbs/5.jpg" alt="thumb5" class="thumb"/></a></li>
+						<li><a href="#"><img src="images/thumbs/6.jpg" alt="thumb6" class="thumb"/></a></li>
+					</ul>
+				</div>
+				<div id="bf_gallery" class="bf_gallery">
+					<a id="bf_close" href="#" class="bf_close"></a>
+					<div class="bf_nav">
+						<a id="bf_prev" href="#" class="bf_prev"></a>
+						<a id="bf_next" href="#" class="bf_next"></a>
+					</div>
+					<div class="bf_gallery_wrapper">
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu #1</h2></div>
+							<div class="bf_desc">
+								<p>Shitty ass Fondu</p>
+							</div>
+							<img src="images/foreground/1.jpg" alt="image1" data-bgimg="images/background/1.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu #2</h2></div>
+							<div class="bf_desc">
+								<p>Fonduuuu</p>
+							</div>
+							<img src="images/foreground/2.jpg" alt="image1" data-bgimg="images/background/2.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu #3</h2></div>
+							<div class="bf_desc">
+								<p>Fonduu</p>
+							</div>
+							<img src="images/foreground/3.jpg" alt="image1" data-bgimg="images/background/3.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu #4</h2></div>
+							<div class="bf_desc">
+								<p>More Fondu</p>
+							</div>
+							<img src="images/foreground/4.jpg" alt="image1" data-bgimg="images/background/4.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu #5</h2></div>
+							<div class="bf_desc">
+								<p>More Fonduuuu again</p>
+							</div>
+							<img src="images/foreground/5.jpg" alt="image1" data-bgimg="images/background/5.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Fondu agaain</h2></div>
+							<div class="bf_desc">
+								<p>More Fuckin Fondu</p>
+							</div>
+							<img src="images/foreground/6.jpg" alt="image1" data-bgimg="images/background/6.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bf_page" id="visit">
+				
+			</div>
+		</div>
+		<div class="bf_footer">
+		</div>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.template.min.js"></script>
+    </body>
+</html>
