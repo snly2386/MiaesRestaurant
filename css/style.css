@@ -14,7 +14,7 @@ a{
 	top:0px;
 	left:0px;
 	height:100%;
-	cursor:url(../images/cursor_min.cur), pointer;
+	cursor: pointer;
 }
 .bf_overlay{
 	position:fixed;
@@ -198,7 +198,7 @@ a.bf_close{
 	width:500px;
 	left:20px;
 	z-index:9;
-	cursor:url(../images/cursor_full.cur),  ne-resize;
+	cursor:pointer;
 }
 .bf_heading,
 .bf_desc{
